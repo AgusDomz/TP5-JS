@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TP5-JS</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <link href="styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- 
+    Luego crea la interfaz necesaria para que el usuario pueda crear un objeto persona, permitiendo ingresar las propiedades mediante un formulario, también agregar los botones “mostrar generación”, es “mayor de edad” e indicar en un alert el resultado de la función correspondiente.  -->
+
+    <div class="d-flex justify-content-center align-items-center flex-column">
+      <form id="formPersona" class="row flex-column" method="GET">
+        <div class="col m-3 text-center">
+          <label class="mb-3">Ingresa tu nombre:</label>
+          <input
+            type="text"
+            id="inputNombre"
+            class="form-control text-center"
+            placeholder="Nombre"
+            aria-label="Nombre"
+          />
+        </div>
+        <div class="col m-3 text-center">
+          <label class="mb-3">Ingresa tu edad:</label>
+          <input
+            type="text"
+            id="inputEdad"
+            class="form-control text-center"
+            placeholder="Edad"
+          />
+        </div>
+        <div class="col m-3 text-center">
+          <label class="mb-3">Ingresa tu DNI:</label>
+          <input
+            type="text"
+            id="inputDNI"
+            class="form-control text-center"
+            placeholder="DNI"
+          />
+        </div>
+        <div class="col m-3 text-center">
+          <label class="mb-3">Ingresa tu sexo (H hombre, M mujer):</label>
+          <input
+            type="text"
+            id="inputSexo"
+            class="form-control text-center"
+            placeholder="Sexo"
+          />
+        </div>
+        <div class="col m-3 text-center">
+          <label class="mb-3">Ingresa tu peso:</label>
+          <input
+            type="text"
+            id="inputPeso"
+            class="form-control text-center"
+            placeholder="Peso"
+          />
+        </div>
+        <div class="col m-3 text-center">
+          <label class="mb-3">Ingresa tu altura:</label>
+          <input
+            type="text"
+            id="inputAltura"
+            class="form-control text-center"
+            placeholder="Altura"
+          />
+        </div>
+        <div class="col m-3 text-center">
+          <label class="mb-3">Ingresa tu año de nacimiento:</label>
+          <input
+            type="text"
+            id="inputNacimiento"
+            class="form-control text-center"
+            placeholder="Año nacimiento"
+          />
+        </div>
+        <div class="d-grid gap-2 mx-auto">
+          <button id="btnEnviar" class="btn btn-danger" type="submit">
+            Enviar Formulario
+          </button>
+          <button id="btnGeneraciones" class="btn btn-danger" type="submit">
+            Mostrar Generacion
+          </button>
+          <button id="btnMayorDeEdad" class="btn btn-danger" type="submit">
+            Es Mayor de Edad
+          </button>
+        </div>
+      </form>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="index.js"></script>
+  </body>
+</html>
